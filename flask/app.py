@@ -20,7 +20,7 @@ def ajaxImage(imageSize):
     image = cv2.resize(img, imageSize)/255.0
     return image
 
-@app.route('/ajax', methods=['GET','POST'])
+@app.route('/predict', methods=['GET'])
 def ajax():
     image = ajaxImage((28,28))
     ### code 작성 ###
