@@ -3,7 +3,7 @@ var context = canvas.getContext("2d");
 const CANVAS_SIZE = 300;
 canvas.width = CANVAS_SIZE;
 canvas.height = CANVAS_SIZE;
-context.lineWidth = 35;
+context.lineWidth = 30;
 context.strokeStyle = "#FFFFFF";
 var painting = false;
 
