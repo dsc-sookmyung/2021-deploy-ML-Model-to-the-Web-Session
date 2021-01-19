@@ -4,4 +4,4 @@
 ### session 전 준비할 것
 - python3 설치
 - flask/app.py 파일을 보고 필요한 패키지 설치
-- code editor (Visual Studio code 사용 예정 + live server)
+- code editor (Visual Studio code 사용 예정 + live server - extension 설치)
