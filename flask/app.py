@@ -18,13 +18,19 @@ def ajaxImage(imageSize):
     body = base64.decodebytes(image_encoded.encode('utf-8'))
     img = np.array(Image.open(BytesIO(body)).convert("L"))
     image = cv2.resize(img, imageSize)/255.0
+    image = np.reshape(image, (1, imageSize[0], imageSize[1]))
     return image
+
+@app.route('/')
+def index():
+    return 0
 
 @app.route('/predict', methods=['GET'])
 def ajax():
     image = ajaxImage((28,28))
-    ### code 작성 ###
-    
+    model = keras.models.load_model("tf-model.h5")
+    prediction = model.predict(image)[0]
+    return {'answer': int(np.argmax(prediction))}
 
 if __name__ == '__main__':
     app.run(host='localhost', port=5000, threaded=False)
