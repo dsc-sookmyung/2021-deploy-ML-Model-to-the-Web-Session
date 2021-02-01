@@ -10,10 +10,11 @@
 ```bash
 $ pip install pipenv
 ```
-해당 working directory에서 실행
+flask 폴더에서 실행
 ```bash
 $ pipenv shell
 ```
+flask 폴더 내에 있는 requirements.txt 
 ```bash
 $ pipenv install -r requirements.txt
 ```
