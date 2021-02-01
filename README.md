@@ -6,7 +6,7 @@
 - flask/app.py 파일을 보고 필요한 패키지 설치
 - code editor (Visual Studio code 사용 예정 + live server - extension 설치)
 
-### 가상환경에서 실행하고 싶은 경우 (Windows 기준)
+### 가상환경에서 실행하고 싶은 경우 (Windows 기준 - 작성자는 python3.8)
 ```bash
 $ pip install pipenv
 ```
